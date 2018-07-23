@@ -1,0 +1,22 @@
+{
+    "name": "pczyzewski/uni-broker",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Pawel Czyzewski",
+            "email": "pawel.czyzewski@enginewerk.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Rakuten\\": ["src/"]
+        }
+    },
+    "require": {
+        "php": ">=7.1",
+        "php-amqplib/php-amqplib": "^2.7"
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
