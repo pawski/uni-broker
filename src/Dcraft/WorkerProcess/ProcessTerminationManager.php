@@ -28,6 +28,8 @@ class ProcessTerminationManager
             pcntl_signal_dispatch();
         });
 
+        pcntl_signal(SIGTERM, [$this, 'runTerminationSequence']);
+
         declare (ticks = 1);
     }
 }
